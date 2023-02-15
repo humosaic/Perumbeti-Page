@@ -18,8 +18,6 @@ mkdocs-pdf-export-plugin
 mkdocstrings 
 mkdocstrings-crystal
 mkdocstrings-python-legacy
-#pygments>=2.10,<2.12
-#pymdown-extensions<9.4
 
 # Requirements for core
 jinja2>=3.0.2
