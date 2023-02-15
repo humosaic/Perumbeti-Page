@@ -1,0 +1,115 @@
+# General
+site_name: "Your Name / Site Title"
+site_description: 'Short Description'
+site_author: 'FirstName LastName'
+site_url: https://cosimichele.github.io/home/
+
+# Repository
+repo_name: RepoName
+repo_url: Desired Url
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/brightness-3
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  font:
+    text: Montserrat
+    code: Regular
+  favicon: assets/favicon.png
+  icon:
+    logo: material/bookmark
+    admonition:
+      note: material/map-marker-radius-outline
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+
+# Page tree
+nav:
+  - Home: home.md
+  - Publications: pubs.md
+  - Talks: talks.md
+  - Teaching: teaching.md
+  - Portfolio: portfolio.md
+  - Blog Posts: blog.md
+  - CV: cv.docx
+  - Guide: guide.md
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+ 
+plugins:
+  - search
+  - mkdocstrings:
+      custom_templates: templates
+      default_handler: python
+      handlers:
+        python:
+          options:
+            show_source: false
+  - git-revision-date
+  - mkdocs-jupyter:
+        include_source: True
+        ignore_h1_titles: True
