@@ -1,4 +1,4 @@
-# academicpages-mkdocs :book:
+# Perumbeti academicpages-mkdocs
 
 :wave: Welcome to **academicpages-mkdocs**! This repository has been designed for learners of the [FOSS](https://foss.cyverse.org/) course and is based on [academicpages](https://academicpages.github.io/)([git repo](https://github.com/academicpages/academicpages.github.io)).
 
