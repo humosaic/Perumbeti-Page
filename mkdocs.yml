@@ -1,13 +1,13 @@
 # General
-site_name: "Your Name / Site Title"
-site_description: 'Short Description'
-site_author: 'FirstName LastName'
+site_name: "Ajay Perumbeti / Perumbeti Page"
+site_description: 'academic-pages-mkdocs'
+site_author: 'Ajay Perumbeti'
 site_url: https://cosimichele.github.io/academicpages-mkdocs
 
 # Repository
-repo_name: RepoName
-repo_url: https://github.com/CosiMichele/academicpages-mkdocs
-edit_uri: edit/main/docs/
+repo_name: Perumbeti-Page
+repo_url: https://github.com/humosaic/Perumbeti-Page
+edit_uri: https://humosaic.github.io/Perumbeti-Page
 
 # Configuration
 theme:
